@@ -1,5 +1,5 @@
 ---ESTRUTURA SEQUENCIAL----
-1:
+1.1:
 Algoritmo "semnome"
 
 Var
@@ -10,7 +10,7 @@ escreva("Olá Mundo")
 
 Fimalgoritmo
 
-2:
+1.2:
 Algoritmo "semnome"
 
 Var
@@ -28,7 +28,7 @@ Inicio
 
 Fimalgoritmo
 
-3:Algoritmo "semnome"
+1.3:Algoritmo "semnome"
 
 Var
 nota1,nota2, resultado:real
@@ -51,7 +51,7 @@ Fimalgoritmo
 
  ----  estrutura de decisao---
 
-1.2:
+----2.1:---
 
 Algoritmo "semnome"
 
@@ -76,4 +76,190 @@ Inicio
 
 Fimalgoritmo
 
+----2.2:---
+
+
+Algoritmo "semnome"
+
+Var
+
+opcao: inteiro
+
+Inicio
+
+escreval ("Escolha o numero")
+leia(opcao)
+se opcao > 0 entao
+escreval("Positivo")
+fimse
+se opcao < 0 entao
+escreval("Negativo")
+fimse
+se opcao = 0 entao
+escreval("Neutro")
+fimse
+Fimalgoritmo
+
+---3.3:----
+
+Algoritmo "semnome"
+
+Var
+f: caractere
+m: caractere
+opcao: caractere
+
+Inicio
+
+escreval ("digite f ou m para definir o sexo: ")
+leia(opcao)
+se opcao = "f" entao
+escreval("feminino")
+senao
+escreval("masculino")
+fimse
+
+
+
+ 
+
+ 
+
+
+Fimalgoritmo
+
+
+-------EstruturaDeRepeticao-------
+---3.1:---
+
+Algoritmo "semnome"
+
+Var
+nota:real
+
+
+Inicio
+ enquanto verdadeiro faca
+ escreva( "digite de 1 a 10: ")
+ leia(nota)
+ 
+
+ se nota > 10 entao
+ escreval("invalido")
+ fimse
+ se (nota >0) e (nota <10) entao
+ interrompa
+ fimse
+ fimenquanto
+ 
+ escreva("valido")
+
+
+Fimalgoritmo
+
+---3.2-----
+
+
+Algoritmo "semnome"
+
+Var
+usuario:caractere
+senha: caractere
+
+
+Inicio
+
+enquanto (usuario <> "admin") ou (senha<> "admin") faca
+escreva(" digite seu usuario: ")
+leia(usuario)
+escreva("digite a sua senha: ")
+leia(senha)
+
+se ( usuario="admin") e (senha="admin") entao
+escreva ("logado")
+fimse
+se (usuario <> "admin") e (senha<> "admin")  entao
+escreva ("acesso invalido")
+fimse
+fimenquanto
+
+Fimalgoritmo
+
+---3.3---
+
+Algoritmo "semnome"
+
+Var
+idade: inteiro
+salario: real
+sexo, nome: caractere
+estadocivil:  caractere
+
+Inicio
+
+escreval("Qual seu nome?")
+leia(nome)
+escreval("digite sua idade:")
+leia(idade)
+escreval("digite o salario: ")
+leia(salario)
+escreval( "digite seu sexo escolha F para femininino e M masculino: ")
+leia(sexo)
+escreval( "digite estado civil  's', 'c', 'v', 'd': ")
+leia(estadocivil)
+
+
+se (idade > 150) ou (idade < 0) entao
+escreval("Idade invalida")
+fimse
+
+se  (idade < 150) ou (idade > 0) entao
+escreval("Idade valida")
+fimse
+
+se salario > 0 entao
+escreval("Salario valido")
+fimse
+
+ se sexo = "f" entao
+escreval("feminino")
+sexo <- "feminino"
+fimse
+ se sexo = "m" entao
+ escreval("masculino")
+ sexo <- "masculino"
+ fimse
+ 
+ se estadocivil = "s" entao
+ escreval("Solteiro(a)")
+ estadocivil <- "Solteiro(a)"
+ fimse
+
+ se estadocivil = "c" entao
+ escreval("Casado(a)")
+ estadocivil <- "Casado(a)"
+ fimse
+ 
+ se estadocivil = "v" entao
+ escreval("Viuvo(a)")
+ estadocivil <- "Viuvo(a)"
+ fimse
+ 
+ se estadocivil = "d" entao
+ escreval("Divorciado(a)")
+ estadocivil <- "Divorciado(a)"
+ fimse
+ 
+ escreval("-----------------------")
+ escreval("Nome: ", nome)
+ escreval("Idade: ", idade)
+ escreval("Salario: ", salario)
+ escreval("Sexo: ", sexo)
+ escreval("Estado Civil: ", estadocivil)
+
+
+
+
+
+Fimalgoritmo
 
