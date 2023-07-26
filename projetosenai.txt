@@ -1,0 +1,79 @@
+---ESTRUTURA SEQUENCIAL----
+1:
+Algoritmo "semnome"
+
+Var
+
+Inicio
+
+escreva("Olá Mundo")
+
+Fimalgoritmo
+
+2:
+Algoritmo "semnome"
+
+Var
+numero:real
+
+Inicio
+
+ escreva ("escolha um numero: ")
+ leia(numero)
+ escreva(numero)
+ 
+ 
+ 
+
+
+Fimalgoritmo
+
+3:Algoritmo "semnome"
+
+Var
+nota1,nota2, resultado:real
+
+Inicio
+
+escreva("digite a primeira nota: ")
+leia(nota1)
+escreva("digite a segunda nota: ")
+leia(nota2)
+
+resultado <- (nota1+nota2)
+
+escreva(resultado)
+ 
+
+
+Fimalgoritmo
+
+
+ ----  estrutura de decisao---
+
+1.2:
+
+Algoritmo "semnome"
+
+Var
+numero1,numero2:real
+
+Inicio
+  escreva("digite o primeiro numero: ")
+  leia(numero1)
+  escreva("digite o segundo mumero: ")
+  leia(numero2)
+  
+  se numero1 > numero2 entao
+  escreva(numero1)
+
+  senao
+  escreva(numero2)
+  fimse
+
+ 
+
+
+Fimalgoritmo
+
+
